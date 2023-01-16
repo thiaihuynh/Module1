@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý OT</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <section>
+        <div class="body">
+            <div class="create-request">
+                <div class="create-request__item">
+                    <div class="input-form">
+                        <label for="request-date">Ngày request</label>
+                        <input type="date" name="request-date" id="requestDate">
+                    </div>
+                </div>
+                <div class="create-request__item">
+                    <div class="input-form">
+                        <label for="users">Người tạo request</label>
+                        <input type="text" name="user" id="user">
+                    </div>
+                </div>
+                <div class="create-request__item">
+                    <div class="input-form">
+                        <label for="project">Dự án</label>
+                        <select name="project" id="project">
+                            <option value="A">dự án A</option>
+                            <option value="B"> dự ánB</option>
+                            <option value="C">dự án C</option>
+                            <option value="D">dự án D</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="create-request__item">
+                    <div class="input-form">
+                        <label for="ot-time">Số giờ OT</label>
+                        <select name="ot-time" id="otTime">
+                        </select>
+                    </div>
+                </div>
+                <div class="create-request__item">
+                    <div class="input-form">
+                        <label for="approve-user">Người approve</label>
+                        <select name="approve-user" id="approveUser">
+                            <option value="Nguyễn Văn A">Nguyễn Văn A</option>
+                            <option value="Phạm thị B">Phạm thị B</option>
+                            <option value="Nguyễn Văn C">Nguyễn Văn C</option>
+                            <option value="Phạm thị D">Phạm thị D</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="create-request__button">
+                    <button type="submit" id="createRequest" onclick="validate()">Tạo request</button>
+                </div>
+            </div>
+            <div class="datatable">
+                <table>
+                    <thead>
+                        <th>No</th>
+                        <th>Nhân viên</th>
+                        <th>Ngày request</th>
+                        <th>Dự án</th>
+                        <th>Số giờ</th>
+                        <th>Quản lý</th>
+                        <th>Status</th>
+                        <th>Hành động</th>
+                    </thead>
+                    <tbody id="tbRequest">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+    <script src="request.js"></script>
+</body>
+</html>

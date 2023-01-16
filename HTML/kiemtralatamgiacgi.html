@@ -1,0 +1,54 @@
+<html>
+    <body>
+        
+        <table>
+            <tbody>
+                <tr>
+                    <td>nhap canh a</td>
+                    <td><input id="a" type="number" ></td>
+                </tr>
+                <tr>
+                    <td>nhap canh b</td>
+                    <td><input id="b" type="number" ></td>
+                </tr>
+                <tr>
+                    <td>nhap canh c</td>
+                    <td><input id="c" type="number" ></td>
+                </tr>
+                <tr>
+                    <td>kiem tra</td>
+                    <td><button onclick="tinhtoan()">click</button></td>
+                </tr>
+                <tr>
+                    <td>hinh nay co y nghia</td>
+                    <td><input id="hinh" readonly ></td>
+                </tr>
+            </tbody>
+        </table>
+       
+        <script>
+        function tinhtoan(){
+            let a = +document.getElementById('a').value;
+            let b = +document.getElementById('b').value;
+            let c = +document.getElementById('c').value;
+            if  ( a+b>c && b+c>a && a+c>b) {
+                    if (a==b && b==c && c==a) {
+                        document.getElementById('hinh').value="Tam giác đều"
+                    } else if ( a==b || b==c || c==a){
+                        document.getElementById('hinh').value="Tam giác cân"
+                    } else if ( (a**2==b**2 + c**2) ||  (b**2==a**2 + c**2) ||  (c**2==a**2 + b**2)) {
+                        document.getElementById('hinh').value="Tam giác vuông"
+                    } else if ((a*a>b*b+c*c||b*b>a*a+c*c||c*c >a*a+b*b)) {
+                        document.getElementById('hinh').value="Tam giác tù"
+                    } else {
+                    document.getElementById('hinh').type="text"
+                    document.getElementById('hinh').value="Tam giác nhọn"
+                    }
+                } else {
+                document.getElementById('hinh').type="text"
+                document.getElementById('hinh').value="Không phải tam giác"
+             }
+        }
+        </script>
+    </body>
+</html>

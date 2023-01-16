@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td> nhập a</td>
+                    <td> <input type="number" id="a"></td>
+                </tr>
+                <tr>
+                    <td> chạy máy</td>
+                    <td> <button onclick="tinhtoan()">tính toán</button></td>
+                </tr>
+                <tr>
+                    <td> kết quả</td>
+                    <td> <input type="number" id="c"></td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            function tinhtoan() {
+                let a= +document.getElementById("a").value;
+                if (a<0) { 
+                    alert("vui long nhap lai số tiền thu nhập")
+                }
+                else{
+                    if (a> 80){
+                        let c1= a*35/100;
+                        document.getElementById("c").value= c1
+                    }
+                    else{
+                    if (a>52){
+                        let c2= a*30/100;
+                        document.getElementById("c").value= c2
+                    }}
+                    else{
+                    if (a>32){
+                        let c3= a*25/100;
+                        document.getElementById("c").value= c3
+                    }}
+                    else{
+                    if (a>18){
+                        let c4= a*20/100;
+                        document.getElementById("c").value= c4
+                    }}
+    </body>
+</html>

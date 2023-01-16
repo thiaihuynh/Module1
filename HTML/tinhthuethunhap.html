@@ -1,0 +1,70 @@
+html>
+    <body>
+       <table>
+        <tbody>
+            <tr>
+                <td>nhập số tiền thu nhập</td>
+                <td><input type="number" id="a"></td>
+            </tr>
+            </tr>
+            
+                <td>kích vào để ht tính toán </td>
+                <td><button onclick="tinhtien()">tiền đóng là</button></td>
+            </tr>
+            <tr>
+                <td>so tien phai dong</td>
+                <td><input type="number" id="c"></td>
+            </tr>
+        </tbody>
+       </table>
+       <script>
+        function tinhtien() {
+            let a= +document.getElementById("a").value;
+          
+            let b6= 2.927;
+        
+            if (a<0) { 
+                alert("vui long nhap lai số tiền thu nhập")
+            }
+            else{
+                if (a> 80){
+                    let c1= a*35/100;
+                    document.getElementById("c").value= c1
+                }
+                else{
+                if (a>52){
+                    let c2= a*30/100;
+                    document.getElementById("c").value= c2
+                }}
+                else{
+                if (a>32){
+                    let c3= a*25/100;
+                    document.getElementById("c").value= c3
+                }}
+                else{
+                if (a>18){
+                    let c4= a*20/100;
+                    document.getElementById("c").value= c4
+                }}
+                else{
+                if (a>10){
+                    let c5= a*15/100;
+                    document.getElementById("c").value= c5
+                }}
+                else{
+                if (a>5){
+                    let c6= a*10/100;
+                    document.getElementById("c").value= c6
+                }}
+                else{
+                if (a>0){
+                    let c7= a*10/100;
+                    document.getElementById("c").value= c7
+                }}
+
+            }
+
+        }
+       </script>
+    </body>
+</html>

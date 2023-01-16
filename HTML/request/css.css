@@ -1,0 +1,42 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-request {
+    padding-bottom: 20px;
+}
+
+.create-request__item {
+    width: 300px;
+}
+
+.create-request__item>.input-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-request__item>.input-form>input,
+.create-request__item>.input-form>select
+{
+    width: 163px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.create-request__button>button {
+    background-color: darkgoldenrod;
+    color: white;
+}

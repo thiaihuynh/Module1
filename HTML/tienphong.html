@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td>số ngày</td>
+                    <td><input type="number" id="n"></td>
+                </tr>
+                <tr>
+                    <td>loại phòng</td>
+                    <td><input type="number" id="l"></td>
+                </tr>
+                <tr>
+                    <td>tiền</td>
+                    <td><input type="number" id="tien" readonly></td>
+                </tr>
+                <tr>
+                    <td>tính tiền phòng</td>
+                    
+                    <td><button onclick="tinhtien()">tính toán</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <script>
+            function tinhtien() {
+            let n= +document.getElementById("n").value;
+            let l= document.getElementById("l").value;
+            let tien= document.getElementById("tien").value;
+            if (l==1) {
+                alert
+                document.getElementById('tien').value = tien;
+             }
+             if (l==2) {
+                let tin= 800*n;
+                document.getElementById('tien').value = tien;
+             }
+             if (l==3) {
+                let tien= 500*n;
+                document.getElementById('tien').value = tien;
+
+             } }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+    <body>
+       <table>
+        <tbody>
+            <tr>
+                <td>nhập số điện</td>
+                <td><input type="number" id="a"></td>
+            </tr>
+           
+            
+            </tr>
+            
+                <td>tiền điện bằng </td>
+                <td><button onclick="tinhtien()">tiền đónglà</button></td>
+            </tr>
+            <tr>
+                <td>so tien phai dong</td>
+                <td><input type="number" id="c"></td>
+            </tr>
+        </tbody>
+       </table>
+       <script>
+        function tinhtien() {
+            let a= +document.getElementById("a").value;
+            let b1= 1.678;
+            let b2= 1.734;
+            let b3=2.014;
+            let b4= 2.536;
+            let b5=2.834;
+            let b6= 2.927;
+        
+            if (a<0) { 
+                alert("vui long nhap lai so chi dien")
+            }
+            else{
+                if (a <=50){
+                    let c1= a*b1;
+                    document.getElementById("c").value= c1
+                }
+                if (50< a && a <=100){
+                    let c2= 50*b1+(a-50)*b2;
+                    document.getElementById("c").value= c2
+                }
+                if (100< a&& a <=150){
+                    let c3= 50*b1+50*b2+(a-100)*b3;
+                    document.getElementById("c").value= c3
+                }
+                if (150< a && a <=200){
+                    let c4= 50*b1+50*b2+50*b3+(a-150)*b4;
+                    document.getElementById("c").value= c4
+                }
+                if (200< a && a<=250){
+                    let c5= 50*b1+50*b2+50*b3+50*b4+(a-200)*b5;
+                    document.getElementById("c").value= c5
+                }
+                if (a >250){
+                    let c6= 50*b1+50*b2+50*b3+50*b4+50*b5+(a-250)*b6;
+                    document.getElementById("c").value= c6
+                }
+
+            }
+
+        }
+       </script>
+    </body>
+</html>
