@@ -1,3 +1,17 @@
-# Mã nguồn của lớp C1222I1
+ ## REQUEST MANAGER
+## Kiến thức sử dụng
 
-## Module 1 - Bootcamp Preparetion 
+### HTML
+* Div
+* Table
+
+### JavaScript
+* Class
+* Function
+* Array
+* Loop
+* If/else
+
+### CSS
+* Color
+* background-color
