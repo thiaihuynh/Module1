@@ -10,7 +10,7 @@
 * Function
 * Array
 * Loop
-* If/else
+
 
 ### CSS
 * Color
