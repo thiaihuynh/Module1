@@ -1,3 +1,15 @@
+* {
+    padding: 5px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.my-class {
+    background-image: url('./image/nen.jpg.png');
+    background-size: cover;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -8,18 +20,19 @@
 }
 
 .create-request__item {
-    width: 300px;
+    width: 200px;
 }
 
 .create-request__item>.input-form {
     display: flex;
     justify-content: space-between;
+    width: 600px;
 }
 
 .create-request__item>.input-form>input,
 .create-request__item>.input-form>select
 {
-    width: 163px;
+    width: 200px;
 }
 
 table, th, td {
@@ -40,3 +53,17 @@ table, th, td {
     background-color: darkgoldenrod;
     color: white;
 }
+/*Đoạn code trên là một file CSS, nó chứa các lớp CSS để định dạng các thành phần HTML trong trang web.
+
+Dòng 1: Lớp chung cho toàn bộ trang web, thiết lập khoảng cách lề (padding) là 5px, khoảng cách ngoài (margin) là 0px, và kiểu chữ là Cambria, Cochin, Georgia, Times, 'Times New Roman', serif và có kích thước font là 24px
+Dòng 3: Lớp .my-class sẽ chứa thuộc tính background-image với đường dẫn đến hình ảnh là './image/nen.jpg.png' và background-size là cover
+Dòng 5: Lớp .body sẽ chứa thuộc tính display là flex và flex-direction là column
+Dòng 7: Lớp .create-request sẽ chứa thuộc tính padding-bottom là 20px
+Dòng 9: Lớp .create-request__item sẽ chứa thuộc tính width là 200px
+Dòng 11: Lớp .create-request__item>.input-form sẽ chứa thuộc tính display là flex, justify-content là space-between và width là 600px
+Dòng 12: Lớp .create-request__item>.input-form>input, .create-request__item>.input-form>select sẽ chứa thuộc tính width là 200px
+Dòng 15: Các thành phần table, th, td sẽ chứa thuộc tính border là 1px và màu solid
+Dòng 17: Lớp .btn-success sẽ chứa thuộc tính background-color là green và color là white
+Dòng 20: Lớp .btn-danger sẽ chứa thuộc tính background-color là red và color là white
+Dòng 23: Lớp .create-request__button>button sẽ chứa thuộc tính background-color là darkgoldenrod và color là white
+*/

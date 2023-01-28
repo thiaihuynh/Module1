@@ -9,7 +9,7 @@ class RequestOT {
         this.status = status;
     }
 }
-
+  
 var project = document.getElementById('otTime');
 var requestArr = [];
 const request_data = 0;
@@ -26,13 +26,22 @@ function validate() {
     let otTime = document.getElementById('otTime').value;
     let manager = document.getElementById('approveUser').value;
 
-    if (requestDate == "" 
-        || user == "" 
-        || project == ""
-        || otTime == ""
-        || approveUser == "") {
-           alert("Thiếu thông tin");
-        } else {
+    if (requestDate == "") {
+        alert("Thiếu thông tin ngày đăng kì");
+     }
+     if (user == "" ){
+        alert("Thiếu thông tin người đăng kì");
+     } 
+     if (project == "" ){
+        alert("Thiếu thông tin dự án");
+     }
+     if (otTime == "" ){
+        alert("Thiếu thông tin thời gian đăng kì tăng ca");
+     }
+     if (approveUser == "" ){
+        alert("Thiếu thông tin người quản lí phê duyệt");
+     }
+        else {
             let id = (requestArr.length + 1);
             let request = new RequestOT(id, user, requestDate, project, otTime, manager, "Pending");
             requestArr.push(request);
